@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Pesticide</title>
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            
+              background-image: url('https://media.istockphoto.com/photos/azadirachta-indica-a-branch-of-neem-tree-leaves-natural-medicine-picture-id1188067568?k=20&m=1188067568&s=612x612&w=0&h=MHFmdP35tDFdAbBfCfzrSS5GDfwndja4GTJqAvrUDJk=');
+              background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative
+            }
+
+            
+            
+input[type=number], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label{
+  color: white;
+}
+
+h2{
+  color: white;
+}
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 40%;
+  background-color:#d62923;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #bd6b27;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+            
+        </style>
+    </head>
+     <body>
+
+     <center>
+            <br>
+            <h2><u>Fill the following details</u></h2>
+            <form method="POST" action="/input">
+                <label for ="count"><b>Enter your insect count:</b> </label>
+                <br>
+                <input type = "text" placeholder="Enter insect count" name=count><br>
+                <label for="crop"><b>Select your crop type</b> </label>
+                <br>
+                <select name="crop">
+                    
+                    <option value=1>Stable</option>
+                    <option value=0>Unstable</option>
+              
+                  </select>
+               <br><br>
+                <label for="soil"><b>Select the type of soil </b> </label>
+                <br>
+            
+                    <select name="soil">
+                    <option value=1>Friable</option>
+                    <option value=0>Non coherent</option>
+                  
+                    </select><br><br>
+                  <label for ="doses"><b>Enter the number of doses per week</b></label><br>
+                  <input type = "text" placeholder="Enter Doses per week" name=doses><br>
+                
+                  <label for = "quit"><b>Enter the number of weeks quit</b></label><br>
+                  <input type = "text" placeholder="Enter number of weeks quit" name=quit><br>
+
+                <label for="season"><b>Select the crop season </b></label><br>
+                    <select name="season">
+                    <option value=1>Rabi</option>
+                    <option value=2>Kharif</option>
+                    <option value=3>Zaid</option>
+                    </select>
+                
+                <br><br><input type="submit" value="SUBMIT">
+
+                
+            </form>
+        </center>
+    </body>
+</html>
